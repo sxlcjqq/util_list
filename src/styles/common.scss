@@ -1,0 +1,70 @@
+body, ul, p, dl, ul, ol, dd, h1, h2, h3, h4, h5, h6, td, input, fieldset, textarea, option, legend {
+  margin: 0;
+  padding: 0;
+}
+*{
+  box-sizing: border-box;
+}
+body {
+  font: 14px "微软雅黑";
+  color: black;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #666666;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong {
+  font-weight: 100;
+}
+
+a, input, select {
+  outline: none;
+}
+
+img {
+  border: 0;
+  vertical-align: top;
+}
+
+//引入iconfont图标库
+@font-face {
+font-family: 'iconfont';
+src: url('../../static/iconfont/iconfont.eot');
+src: url('../../static/iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+url('../../static/iconfont/iconfont.woff') format('woff'),
+url('../../static/iconfont/iconfont.ttf') format('truetype'),
+url('../../static/iconfont/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+font-family:"iconfont" !important;
+font-size:16px;font-style:normal;
+-webkit-font-smoothing: antialiased;
+-webkit-text-stroke-width: 0.2px;
+-moz-osx-font-smoothing: grayscale;
+}
+//版心宽度
+$commonWidth:1160px;
+.hide{
+  display: none;
+}
+//点赞按钮样式,未点赞
+.praiseNoCli{
+    color:#999999;
+    cursor:pointer;
+}
+//点赞按钮样式，点赞过
+.praiseHaveCli{
+    color:#4182FA;
+    cursor:pointer;
+}

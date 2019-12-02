@@ -1,0 +1,37 @@
+
+//三种粗细 [light, normal, bold]
+$font-light: 300;
+$font-normal: 400;
+$font-Medium: 500;
+$font-bold: 700;
+
+//通用宽度
+$commonWidth:1160px;
+
+//通用大块阴影
+$commonShadow:0 2px 10px 0 rgba(0, 0, 0, 0.1);
+
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+button{
+    border:none;
+    outline: none;
+}
+.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    /*
+      Introduced in IE 10.
+      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+    */
+    -ms-user-select: none;
+    user-select: none;
+ }

@@ -6,20 +6,7 @@
     <el-row style="margin:10px;">
       <el-button type="primary" size="mini" @click="clear('textarea')">清空</el-button>
       <el-button type="primary" size="mini" @click="actionFun('jiaya')">加压</el-button>
-      <el-select
-        v-model="zhengzeValue"
-        filterable
-        default-first-option
-        placeholder="请选择"
-        style="width:100px;margin-left:20px;"
-      >
-        <el-option
-          v-for="item in zhengzeOption"
-          :key="item.value"
-          :label="item.label"
-          :value="item.value"
-        ></el-option>
-      </el-select>
+      <el-input placeholder="原单位" v-model="zhengzeValue" style="width:80px;"></el-input>
       <el-select v-model="yunsuanfuValue" placeholder="请选择运算符" style="width:80px;">
         <el-option
           v-for="item in yunsuanfuOption"
@@ -28,21 +15,8 @@
           :value="item.value"
         ></el-option>
       </el-select>
-      <el-select
-        v-model="numValue"
-        filterable
-        allow-create
-        default-first-option
-        placeholder="请选择数值"
-        style="width:80px;"
-      >
-        <el-option
-          v-for="item in numOption"
-          :key="item.value"
-          :label="item.label"
-          :value="item.value"
-        ></el-option>
-      </el-select>
+      <el-input placeholder="请输入数值" v-model="numValue" style="width:100px;"></el-input>
+      <el-input placeholder="换单位" v-model="zhengzeValueTo" style="width:80px;"></el-input>
       <el-button type="primary" size="mini" @click="actionFun('torem')">转换</el-button>
       <el-button type="primary" size="mini" @click="actionFun('torem','jiaya')">转换并加压</el-button>
     </el-row>
@@ -69,7 +43,8 @@ export default {
     return {
       textarea: "",
       textarea_res: "",
-      zhengzeValue: "px换rem",
+      zhengzeValue: "px",
+      zhengzeValueTo: "rem",
       zhengzeOption: [
         {
           value: "px换rem",
@@ -131,24 +106,24 @@ export default {
     });
   },
   watch: {
-    zhengzeValue(n, o) {
-      switch (n) {
-        case "px换rem": //px换rem
-          this.yunsuanfuValue = "4";
-          break;
-        case "rem换px": //rem换px
-          this.yunsuanfuValue = "3";
-          break;
-      }
-    }
+    // zhengzeValue(n, o) {
+    //   switch (n) {
+    //     case "px换rem": //px换rem
+    //       this.yunsuanfuValue = "4";
+    //       break;
+    //     case "rem换px": //rem换px
+    //       this.yunsuanfuValue = "3";
+    //       break;
+    //   }
+    // }
   },
   methods: {
     clear(dd) {
       this[dd] = "";
     },
     trans(num, jiayaval) {
-        var h0=this.zhengzeValue.split('换')[0];
-        var h1=this.zhengzeValue.split('换')[1];
+        var h0=this.zhengzeValue;
+        var h1=this.zhengzeValueTo;
         var $this = this
       function jisuan(val) {
         val = val.replace(h0, "");

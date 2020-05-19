@@ -1,7 +1,9 @@
 <template>
   <div class="header_" :class="headerClass">
     <div class="headerCon">
-      <img  class="header_logo" :src="logoImg" @click="$router.push('index')"/>
+      <img  class="header_logo" src="https://qn-st0.yuketang.cn/15898560418668.jpg" @click="$router.push('index')"/>
+      <img  class="header_logo" src="https://qn-st0.yuketang.cn/15898560418668.jpg" @click="$router.push('index')"/>
+      <img  class="header_logo" src="https://qn-st0.yuketang.cn/15898560418668.jpg" @click="$router.push('index')"/>
         <p class="className" v-if="ifCourseAction"><i></i>{{courseName}}</p>
       <div class="fr">
         <div class="tablist"  v-if="ifCourseAction"> 
@@ -150,8 +152,10 @@ export default {
 }
 
 .header_logo {
-  width: 135px;
-  height: 40px;
+  max-width: 135px;
+  max-height: 40px;
+  width: auto;
+  height: auto;
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;

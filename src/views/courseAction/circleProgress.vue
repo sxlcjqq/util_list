@@ -1,8 +1,9 @@
 <template>
   <div class="courseAction_lesson_left">
     <div class="tab">
-        <span class="text" :class="{'active':!tabIndex}" @click="tabIndex = 0">圆环</span>
-        <span class="text" :class="{'active':tabIndex}" @click="tabIndex = 1">扇形</span>
+        <span class="text" :class="{'active':!tabIndex}" @click="tabIndex = 0">圆环-css</span>
+        <span class="text" :class="{'active':tabIndex==1}" @click="tabIndex = 1">扇形-css</span>
+        <span class="text" :class="{'active':tabIndex==2}" @click="tabIndex = 2">不闭合圆环-canvas</span>
         <i class="line" :class="tabLineClass"></i>
     </div>
     <div class="circlecon">
@@ -33,35 +34,54 @@
             <span class="rightbg" ></span>
             <span class="leftbg" ></span>
         </div>
+
+
+        <div class="block" v-if="tabIndex==2">
+            <span class="demonstration">自定义值：{{progress_canvas}}</span>
+            <el-slider v-model="progress_canvas"></el-slider>
+        </div>
+        <circleProgress v-if="tabIndex==2" :percent="progress_canvas"/>
     </div>
   </div>
 </template>
 
 <script>
+import circleProgress from "@/components/circleProgress";
 export default {
   name: "courseAction_lesson_left",
   data() {
     return {
       total_score:50,
       progress:50,
+      progress_canvas:50,
       tabIndex:0,
       tabLineClass:''
     };
   },
+  components: { circleProgress },
   created() {},
   mounted() {},
   watch: {
     tabIndex(n, o) {
-      if (n == 1) {
-        this.tabLineClass = "righttrans";
-        window.setTimeout(() => {
-          this.tabLineClass = "right";
-        }, 100);
-      } else {
-        this.tabLineClass = "lefttrans";
-        window.setTimeout(() => {
-          this.tabLineClass = "";
-        }, 100);
+      switch(n){
+        case 0:
+          this.tabLineClass = "lefttrans";
+          window.setTimeout(() => {
+            this.tabLineClass = "";
+          }, 100);
+          break;
+        case 1:
+          this.tabLineClass = "righttrans";
+          window.setTimeout(() => {
+            this.tabLineClass = "right";
+          }, 100);
+          break;
+        case 2:
+          this.tabLineClass = "righttrans";
+          window.setTimeout(() => {
+            this.tabLineClass = "right2";
+          }, 100);
+          break;
       }
     }
   },
@@ -188,7 +208,12 @@ export default {
       transition: all 0.2s;
       &.right {
         width: 28px;
-        left: 169px;
+        left: 204px;
+        transition: all 0.1s;
+      }
+      &.right2 {
+        width: 28px;
+        left: 345px;
         transition: all 0.1s;
       }
       &.righttrans {

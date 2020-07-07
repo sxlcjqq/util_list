@@ -55,8 +55,10 @@ export default {
   methods: {
     initinit() {
       if($('.circleProgress').length){
-        this.canvaswidth = $(window).width()*0.432 || 324;
-        this.canvasData.lineWidth = $(window).width() * 0.032 || 24;
+        // this.canvaswidth = $(window).width()*0.432 || 324;
+        // this.canvasData.lineWidth = $(window).width() * 0.032 || 24;
+        this.canvaswidth = 324;
+        this.canvasData.lineWidth = 24;
         this.canvas = document.getElementById(this.el);
         if (this.canvas) {
           this.canvas.height = this.canvaswidth;

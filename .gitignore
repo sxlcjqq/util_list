@@ -1,4 +1,5 @@
 .DS_Store
+node_modules11
 node_modules/
 /dist/
 npm-debug.log*
@@ -13,3 +14,5 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.history
+
+static/video/

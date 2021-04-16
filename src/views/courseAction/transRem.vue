@@ -125,20 +125,19 @@ export default {
         var h0=this.zhengzeValue;
         var h1=this.zhengzeValueTo;
         var $this = this
-      function jisuan(val) {
-        val = val.replace(h0, "");
+      function jisuan(arr,numm) {
         switch($this.yunsuanfuValue*1){
-            case 1:return val + (num * 1) + h1;break;//+
-            case 2:return val - (num * 1) + h1;break;//-
-            case 3:return val * (num * 1) + h1;break;//*
-            case 4:return val / (num * 1) + h1;break;///
-            case 5:return val % (num * 1) + h1;break;//%
+            case 1:return numm + (num * 1) + h1;break;//+
+            case 2:return numm - (num * 1) + h1;break;//-
+            case 3:return numm * (num * 1) + h1;break;//*
+            case 4:return numm / (num * 1) + h1;break;///
+            case 5:return numm % (num * 1) + h1;break;//%
         }
       }
       if (jiayaval=='jiaya') {
-        this.jiaya(this.textarea.replace(eval('/(((\\d)+)'+h0+'){1}/g'), jisuan));
+        this.jiaya(this.textarea.replace(eval('/(\\d+([\\.]\\d+)?)'+h0+'/g'), jisuan));
       } else {
-        this.textarea_res = this.textarea.replace(eval('/(((\\d)+)'+h0+'){1}/g'), jisuan);
+        this.textarea_res = this.textarea.replace(eval('/(\\d+([\\.]\\d+)?)'+h0+'/g'), jisuan);
       }
     },
     actionFun(val, val2) {

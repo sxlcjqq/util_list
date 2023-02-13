@@ -32,7 +32,8 @@ export const routerMap = [
     { path: '/circleProgress', component: resolve => require(['@/views/courseAction/circleProgress.vue'], resolve),name:'circleProgress'},
     { path: '/transRem', component: resolve => require(['@/views/courseAction/transRem.vue'], resolve),name:'transRem'},
     { path: '/transHtml', component: resolve => require(['@/views/courseAction/transHtml.vue'], resolve),name:'transHtml'},
-    { path: '/audio', component: resolve => require(['@/views/courseAction/audio.vue'], resolve),name:'audio'}]
+    { path: '/audio', component: resolve => require(['@/views/courseAction/audio.vue'], resolve),name:'audio'},
+    { path: '/maoxian', component: resolve => require(['@/views/courseAction/maoxian.vue'], resolve),name:'maoxian'}]
   },
   { path: '*', redirect: '/404' ,showHeader:false,showFooter:false}
 ]

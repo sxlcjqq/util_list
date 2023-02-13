@@ -78,7 +78,7 @@ export default {
     width: 116px;
     height: 76px;
     line-height: 76px;
-    background: #4182fa;
+    background: #1769fe;
     font-size: 20px;
     text-align: center;
     color: #ffffff;
@@ -89,7 +89,7 @@ export default {
   }
   &:hover {
     .searchInput {
-      border-color: #4182fa;
+      border-color: #1769fe;
     }
   }
 }
@@ -348,10 +348,10 @@ export default {
       .toCourse {
         display: inline-block;
         vertical-align: top;
-        border: 1px solid #4182fa;
+        border: 1px solid #1769fe;
         border-radius: 2px;
         font-size: 16px;
-        color: #4182fa;
+        color: #1769fe;
         line-height: 32px;
         width: 100px;
         margin-left: 20px;
@@ -361,10 +361,10 @@ export default {
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
         .toCourse {
           color: #ffffff;
-          background: #4182fa;
+          background: #1769fe;
         }
         .title {
-          color: #4182fa;
+          color: #1769fe;
           text-decoration: underline;
         }
       }

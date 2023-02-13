@@ -271,14 +271,14 @@ export default {
     }
     .left {
       clip: rect(0, 35px, 70px, 0);
-      background-color: #4182fa;
+      background-color: #1769fe;
       transition-delay: 0.3s;
       transition: transform 0.3s;
       z-index: 5;
     }
     .right {
       clip: rect(0px, 70px, 70px, 35px);
-      background-color: #4182fa;
+      background-color: #1769fe;
       transition: transform 0.3s;
       z-index: 2;
       &.top {

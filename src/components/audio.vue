@@ -284,7 +284,7 @@ export default {
         height: 32px;
         .iconfont{
         font-size: 32px;
-        color: #4182fa;
+        color: #1769fe;
         }
     }
     .start-time{
@@ -307,7 +307,7 @@ export default {
         border-radius: 1px;
         margin-top:15.4px;
         .line-up{
-            background: #4182FA;
+            background: #1769fe;
             height: 5px;
             border-radius: 2px;
             display: block;
@@ -404,7 +404,7 @@ export default {
         position: relative;
         .line-up{
             display: block;
-            background: #4182fa;
+            background: #1769fe;
             height: 0;
             width: 2px;
             border-radius: 2px;
@@ -416,7 +416,7 @@ export default {
             height: 6px;
             border-radius: 3px;
             display: block;
-            background: #4182fa;
+            background: #1769fe;
             content:'';
             position: absolute;
             right: -5px;

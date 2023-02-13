@@ -55,6 +55,11 @@ export default {
         name:'fjzf的【audio】',
         path:'audio',
         query:{}
+      },{
+        id:'7',
+        name:'fjzf的【像素图】',
+        path:'maoxian',
+        query:{}
       }],
       checkBtnId:0
     }

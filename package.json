@@ -42,7 +42,7 @@
     "js-base64": "^2.4.9",
     "js-cookie": "^2.2.0",
     "jsencrypt": "^3.0.0-rc.1",
-    "jsrsasign": "^8.0.12",
+    "jsrsasign": "^10.5.25",
     "moment": "^2.22.2",
     "node-notifier": "^5.1.2",
     "node-sass": "^4.9.3",

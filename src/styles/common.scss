@@ -39,13 +39,11 @@ img {
 
 //引入iconfont图标库
 @font-face {
-font-family: 'iconfont';
-src: url('../../static/iconfont/iconfont.eot');
-src: url('../../static/iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
-url('../../static/iconfont/iconfont.woff') format('woff'),
-url('../../static/iconfont/iconfont.ttf') format('truetype'),
-url('../../static/iconfont/iconfont.svg#iconfont') format('svg');
-}
+  font-family: 'iconfont';
+  src: url('https://proxt-cdn.xuetangx.com/fe-proxtassets/xuetangX/23/08211/iconfont.woff2') format('woff2'),
+       url('https://proxt-cdn.xuetangx.com/fe-proxtassets/xuetangX/23/08211/iconfont.woff') format('woff'),
+       url('https://proxt-cdn.xuetangx.com/fe-proxtassets/xuetangX/23/08211/iconfont.ttf') format('truetype');
+  }
 .iconfont{
 font-family:"iconfont" !important;
 font-size:16px;font-style:normal;

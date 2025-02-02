@@ -65,6 +65,21 @@ export default {
         name:'fjzf的【像素图大版】',
         path:'maoxian2',
         query:{}
+      },{
+        id:'10',
+        name:'fjzf的【xls】',
+        path:'xls',
+        query:{}
+      },{
+        id:'11',
+        name:'fjzf的【大列表】',
+        path:'list',
+        query:{}
+      },{
+        id:'12',
+        name:'fjzf的【threeJs】',
+        path:'three',
+        query:{}
       }],
       checkBtnId:0
     }

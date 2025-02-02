@@ -2167,6 +2167,7 @@ export default {
   },
   created() {},
   mounted() {
+    a.b()
   },
   watch: {},
   methods: {

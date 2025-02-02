@@ -34,7 +34,10 @@ export const routerMap = [
     { path: '/transHtml', component: resolve => require(['@/views/courseAction/transHtml.vue'], resolve),name:'transHtml'},
     { path: '/audio', component: resolve => require(['@/views/courseAction/audio.vue'], resolve),name:'audio'},
     { path: '/maoxian', component: resolve => require(['@/views/courseAction/maoxian.vue'], resolve),name:'maoxian'},
-    { path: '/maoxian2', component: resolve => require(['@/views/courseAction/maoxian2.vue'], resolve),name:'maoxian'}]
+    { path: '/maoxian2', component: resolve => require(['@/views/courseAction/maoxian2.vue'], resolve),name:'maoxian'},
+    { path: '/list', component: resolve => require(['@/views/courseAction/list.vue'], resolve),name:'list'},
+    { path: '/xls', component: resolve => require(['@/views/courseAction/xls.vue'], resolve),name:'xls'},
+    { path: '/three', component: resolve => require(['@/views/courseAction/three.vue'], resolve),name:'three'}]
   },
   { path: '*', redirect: '/404' ,showHeader:false,showFooter:false}
 ]

@@ -123,7 +123,7 @@ export default {
         .leftbg {
           bottom: 0;
           left: 0;
-          background: url(../../assets/courseAction/oval_bg_left.png) #fcfcfc
+          background: url("../../assets/courseAction/oval_bg_left.png") #fcfcfc
             no-repeat bottom center;
           background-size: contain;
           z-index: 7;
@@ -134,7 +134,7 @@ export default {
         .rightbg {
           bottom: 0;
           right: 0;
-          background: url(../../assets/courseAction/oval_bg_right.png) #fcfcfc
+          background: url("../../assets/courseAction/oval_bg_right.png") #fcfcfc
             no-repeat bottom center;
           background-size: contain;
           z-index: 3;
@@ -142,7 +142,7 @@ export default {
         .left {
           bottom: 0;
           left: 0;
-          background: url(../../assets/courseAction/oval_left.png) no-repeat
+          background: url("../../assets/courseAction/oval_left.png") no-repeat
             bottom center;
           background-size: contain;
           transform-origin: 100% 50%;
@@ -153,7 +153,7 @@ export default {
         .right {
           right: 0;
           top: 0;
-          background: url(../../assets/courseAction/oval_right.png) no-repeat
+          background: url("../../assets/courseAction/oval_right.png") no-repeat
             top center;
           background-size: contain;
           transform-origin: 0% 50%;
